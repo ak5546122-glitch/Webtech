@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Arithmetic Operations</title>
+</head>
+<body>
+
+<script>
+    
+    let a = prompt("Enter first number:");
+    let b = prompt("Enter second number:");
+    
+
+    
+    a = Number(a);
+    b = Number(b);
+
+    
+    let add = a + b;
+    let sub = a - b;
+    let mul = a * b;
+    let div = b !== 0 ? a / b : "Cannot divide by zero";
+    let mod = b !== 0 ? a % b : "Cannot find modulus (division by zero)";
+
+   
+    let result = 
+        "Results:\n\n" +
+        "Addition: " + add + "\n" +
+        "Subtraction: " + sub + "\n" +
+        "Multiplication: " + mul + "\n" +
+        "Division: " + div + "\n" +
+        "Modulus: " + mod;
+
+    alert(result);
+</script>
+
+</body>
+</html>

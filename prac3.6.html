@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+// e) Check prime or not (dowhile loop)
+let n = Number(prompt("Enter a number to check prime:"));
+let i = 2;
+let prime = true;
+
+    do {
+        if (n % i === 0) 
+        {
+            prime = false;
+            break;
+        }
+        i++;
+    } while (i <= Math.sqrt(n));
+
+    if (n <= 1) prime = false;
+
+    if (prime) 
+    {
+        alert(n + " is PRIME");
+    } 
+    else -
+    {
+        alert(n + " is NOT PRIME");
+    }
+
+</script>
+
+</body>
+</html>
