@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Div & Span Layout</title>
+  <style>
+    /* Base styles - mobile first */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #dddbdb00;
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .header {
+      background-color: #63edda;
+      color: rgb(255, 81, 0);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .nav span {
+      margin: 0 1rem;
+      color: hwb(0 8% 0%);
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    div .about, .skills, .contact {
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 2px solid #053efa;
+        border-radius: 2px;
+    }
+
+    .main {
+      background-color: rgb(202, 201, 201);
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    .row {
+      display: block;
+    }
+
+    .column {
+      margin-bottom: 1rem;
+    }
+
+    .sidebar {
+      background-color: #eee;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    .highlight {
+      color: #ff1e00;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.2rem;
+
+    }
+
+    /* Tablet and up */
+    @media (min-width: 100px) {
+      .row {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .column {
+        flex: 2;
+      }
+
+      .sidebar {
+        flex: 1;
+      }
+    }
+
+    /* Desktop and up */
+    @media (min-width: 100px) {
+      .nav span {
+        font-size: 0.2rem;
+      }
+
+      .row {
+        gap: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+      <div class="header">
+  <h1>Hey, I'm Abhishek Kumar!</h1>
+  <p>A web developer passionate about building projects and learning new technologies.</p>
+</div>
+
+<!-- About Me -->
+<div class="about">
+  <h2>About Me</h2>
+  <p>A passionate web developer learning and experimenting modern technologies. My favorite technologies are</p>
+  <ul>
+    <li><span class="highlight">HTML</span></li>
+    <li><span class="highlight">CSS</span></li>
+    <li><span class="highlight">JavaScript</span></li>
+  </ul>
+</div>
+
+<!-- Skills -->
+<div class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li><span class="highlight">FRONTENED :</span> HTML,CSS</li>
+    <li><span class="highlight">Data Analyst :</span>Python,SQL</li>
+    <li><span class="highlight">BACKENED :</span>JavaScript</li>
+  </ul>
+</div>
+
+<!-- Contact -->
+<div class="contact">
+  <h2>Contact Me</h2>
+  <p><strong>Email:</strong> <span class="highlight">aman.kumar4@rungta.org</span></p>
+  <p><strong>Phone:</strong> <span class="highlight">+91-7320841219</span></p>
+</div>
+</body>
+</html>
